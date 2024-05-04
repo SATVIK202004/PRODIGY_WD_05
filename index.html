@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SATVIK Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="weather-container">
+            <h2>SATVIK Weather App</h2>
+            <input type="text" id="city-input" placeholder="Enter city name">
+            <button onclick="fetchWeather()">Get Weather</button>
+            <div id="weather-data"></div>
+            <div class="font-style-selector">
+                <label for="font-style">Select Font Style:</label>
+                <select id="font-style" onchange="changeFontStyle()">
+                    <option value="Arial">Arial</option>
+                    <option value="Helvetica">Helvetica</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                    <!-- Add more font options as needed -->
+                </select>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; PEDDISETTY VENKAT SATVIK, 2024. ALL RIGHTS RESERVED.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
