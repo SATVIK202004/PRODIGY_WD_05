@@ -6,6 +6,19 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     font-family: Arial, sans-serif;
+    animation: moveBackground 30s linear infinite; 
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .container {
@@ -21,6 +34,7 @@ body {
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     max-width: 400px;
+    margin-bottom: 20px; 
 }
 
 input[type="text"] {
