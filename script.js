@@ -16,6 +16,7 @@ function fetchWeather() {
                 <p>Humidity: ${data.main.humidity}%</p>
                 <p>Wind Speed: ${data.wind.speed} m/s</p>
             `;
+            updateTime(); 
         })
         .catch(error => {
             console.log('Error fetching weather data:', error);
@@ -31,3 +32,12 @@ function changeFontStyle() {
         elements[i].style.fontFamily = selectedFont;
     }
 }
+
+function updateTime() {
+    var currentTime = new Date();
+    var hours = currentTime.getHours();
+    var minutes = currentTime.getMinutes();
+    var seconds = currentTime.getSeconds();
+    document.getElementById("current-time").innerText = `Current Time: ${hours}:${minutes}:${seconds}`;
+}
+setInterval(updateTime, 1000);
